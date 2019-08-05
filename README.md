@@ -1,5 +1,6 @@
 # primality-test
-## prime numbers and composite numbers
-### [wikipedia ] (https://en.wikipedia.org/wiki/Prime_number)
+## natural numbers, composite numbers, and prime numbers, oh my!
+
+[wikipedia] (https://en.wikipedia.org/wiki/Prime_number)
 
 
