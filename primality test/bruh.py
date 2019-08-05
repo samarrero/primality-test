@@ -5,7 +5,7 @@
 
 minNum = 2
 
-print ("greetings! i will go through a range of positive, natural numbers and declare their primality!")
+print ("greetings! i will go through a range of natural numbers and declare their primality!")
 
     
 maxNum = int(input("enter max pls: "))
