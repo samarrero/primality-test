@@ -25,28 +25,61 @@ def primalityOpti():
                 if currentNum % 6*k+1 == 0:
                     isPrime = False
                 else:
-                    isPrime = True       
-                
-        if isPrime is False:    #gives the pretty result.
+                    isPrime = True
+                    
+       #gives the pretty result.         
+        if isPrime is False:    
             print(currentNum,'is composite.')
         elif isPrime is True:
            print(currentNum,'is prime.') 
-           
-# !!! testing below !!!
-           
-maxNum = int(input("enter max pls: "))
 
-for currentNum in range(minNum,maxNum+1): #go thru a list of ints
-    numFac = 0
-    for potFac in range(minNum,currentNum): #seek potential factors
-     
-        #print ('testing if',potFac,'is a factor. ',end='') #debug current potential factor
-            if currentNum % potFac == 0:
-                #print (potFac, end=' is a factor. ')
-                numFac += 1
-                break       
+
+
+# !!! testing below !!!
+def primalityBruteMain():
+
+    minNum = 2
+    maxNum = int(input("enter max pls: "))
     
-    if numFac == 0:
-     print(currentNum,'is prime.')
-    else:
-     print(currentNum,'is composite.')
+    for currentNum in range(minNum,maxNum+1): #go thru a list of ints
+        numFac = 0
+        for potFac in range(minNum,currentNum): #seek potential factors
+         
+            #print ('testing if',potFac,'is a factor. ',end='') #debug current potential factor
+                if currentNum % potFac == 0:
+                    #print(potFac, end=' is a factor. ')
+                    numFac += 1
+                    break
+        
+        if numFac == 0:
+          print(currentNum,'is prime.')
+        else:
+          print(currentNum,'is composite.')
+
+def primalityBrute(currentNum):
+        numFac = 0
+
+        for potFac in range(2,currentNum): #seek potential factors
+         
+            #print('testing if',potFac,'is a factor. ',end='') #debug current potential factor
+                if currentNum % potFac == 0:
+                    print(potFac,' is a factor of',currentNum,end='.')
+                    numFac += 1
+                    break       
+        
+        if numFac == 0:
+          print(currentNum,'is prime.')
+        else:
+          print(currentNum,'is composite.')
+
+def iterateNumbers():
+
+    print("greetings! i will go through a range of natural numbers and declare their primality!")
+
+    minNum = int(input("enter min pls: "))
+    maxNum = int(input("enter max pl0xXz!!!11: "))
+
+    for currentNum in range(minNum,maxNum+1): #go thru a list of ints
+        print(currentNum)
+        return(100)
+iterateNumbers()
